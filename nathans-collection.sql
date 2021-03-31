@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.33)
 # Database: nathans-collection
-# Generation Time: 2021-03-29 12:45:14 +0000
+# Generation Time: 2021-03-31 14:00:32 +0000
 # ************************************************************
 
 
@@ -31,7 +31,7 @@ CREATE TABLE `football-jerseys` (
   `team` varchar(25) NOT NULL DEFAULT '',
   `year` int(11) NOT NULL,
   `kit_type` varchar(20) NOT NULL DEFAULT '',
-  `image` varchar(255) DEFAULT '',
+  `image` varchar(255) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -40,15 +40,18 @@ LOCK TABLES `football-jerseys` WRITE;
 
 INSERT INTO `football-jerseys` (`id`, `team`, `year`, `kit_type`, `image`)
 VALUES
-	(1,'Arsenal',2005,'Home','/Users/nathanmuran/sites/academyServer/html/collectionProject/images/arsenalHome05.png'),
-	(2,'Arsenal',2003,'Away','/Users/nathanmuran/sites/academyServer/html/collectionProject/images/arsenalAway03.png'),
-	(3,'Arsenal',1992,'Away','/Users/nathanmuran/sites/academyServer/html/collectionProject/images/arsenalAway92.png'),
-	(4,'Chelsea',1995,'Away','/Users/nathanmuran/sites/academyServer/html/collectionProject/images/chelseaAway95.png'),
-	(5,'Liverpool',1991,'Home','/Users/nathanmuran/sites/academyServer/html/collectionProject/images/liverpoolHome91.png'),
-	(6,'Man Utd',1997,'Home','/Users/nathanmuran/sites/academyServer/html/collectionProject/images/manutdHome97.png'),
-	(7,'France',1998,'Home','/Users/nathanmuran/sites/academyServer/html/collectionProject/imagesfranceHome98.png'),
-	(8,'Brazil',2002,'Home','/Users/nathanmuran/sites/academyServer/html/collectionProject/images/brazilHome98.png'),
-	(9,'Mexico',1998,'Home','/Users/nathanmuran/sites/academyServer/html/collectionProject/images/mexicoHome98.png');
+	(1,'Arsenal',2005,'Home','images/arsenalHome05.png'),
+	(2,'Arsenal',2003,'Away','images/arsenalAway03.png'),
+	(3,'Arsenal',1992,'Away','images/arsenalAway92.png'),
+	(4,'Chelsea',1995,'Away','images/chelseaAway95.png'),
+	(5,'Liverpool',1991,'Home','images/liverpoolHome91.png'),
+	(6,'Man Utd',1997,'Home','images/manutdHome97.png'),
+	(7,'France',1998,'Home','images/franceHome98.png'),
+	(8,'Brazil',2002,'Home','images/brazilHome02.png'),
+	(9,'Mexico',1998,'Home','images/mexicoHome98.png'),
+	(10,'Arsenal',2002,'Away','images/arsenalAway02.png'),
+	(11,'Arsenal',2000,'Home','images/arsenalHome00.png'),
+	(12,'Arsenal',1993,'Away','images/arsenalAway93.png');
 
 /*!40000 ALTER TABLE `football-jerseys` ENABLE KEYS */;
 UNLOCK TABLES;
