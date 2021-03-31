@@ -7,7 +7,6 @@ body {
 }
 
 header {
-    display: flex;
     flex-direction: column;
     margin: 0 auto;
     text-align: center;
@@ -67,6 +66,5 @@ footer {
     padding: 75px;
     text-align: center;
 }
-
 
 /*MEDIA QUERIES*/

@@ -6,14 +6,3 @@ function getDb() {
     return $db;
 }
 
-/** retrieve selected data from db
- * @param PDO $db
- * @return array
- */
-function getShirts(PDO $db): array
-{
-    $query = $db->prepare("SELECT `team`, `year`, `kit_type`, `image` FROM `football-jerseys`;");
-    $query->execute();
-
-    return $query->fetchAll();
-}
